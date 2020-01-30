@@ -12,4 +12,5 @@ COPY . /code/
 RUN pip install -r requirements.txt
 
 # Run python file within container
-ENTRYPOINT [ "python app.py" ]
+EXPOSE 5000
+CMD [ "python", "/code/hello-world.py"]

@@ -14,3 +14,5 @@ WORKDIR /code
 # Install dependencies
 COPY . /code/
 RUN pip install -r requirements.txt
+
+EXPOSE 80:5000

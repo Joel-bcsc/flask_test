@@ -12,5 +12,6 @@ COPY . /code/
 RUN pip install -r requirements.txt
 
 # Run python file within container
+CMD flask run --host 0.0.0.0
 ENTRYPOINT [ "python" ]
 CMD [ "hello-world.py" ]

@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 
 # Run python file within container
 ENTRYPOINT [ "./hello-world.py" ]
-CMD [ "flask", "run", "--host=0.0.0.0" ]
+CMD [ "flask run -h 0.0.0.0 -p 5000" ]
